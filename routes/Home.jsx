@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
     <header>
-      <div>
+      <div className='imagem'>
         <img src={Logo} alt="logo" className='logo'/>
       </div>
         <div id='rotas'>
