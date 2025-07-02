@@ -7,6 +7,7 @@ import{
 import Home from '../routes/Home.jsx'
 import Login from '../routes/Login.jsx'
 import MeuDia from '../routes/MeuDia.jsx'
+import Anotacoes from '../routes/Anotacoes.jsx'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path:"Meu-dia",
     element:<MeuDia/>
+  },
+  {
+    path:"Anotacoes",
+    element:<Anotacoes/>
   }
   
 ])
