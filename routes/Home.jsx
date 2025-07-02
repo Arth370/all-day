@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
     <header>
-      <div>
+      <div className='imagem'>
         <img src={Logo} alt="logo" className='logo'/>
       </div>
         <div id='rotas'>
@@ -23,9 +23,29 @@ function Home() {
     <main>
       <section id='secao1'>
         <h1 id='AllDay'>All Day,</h1>
-        <h2>A Melhor Forma de se Organizar</h2>
+        <h2 id='title'>A Melhor Forma de se Organizar</h2>
         <div id='separacao'></div>
-        <p>organize seu dia com a ajuda da melhor plataforma<br/> de lista de tarefas.</p>
+        <p id='text'>organize seu dia com a ajuda da melhor plataforma<br/> de lista de tarefas.</p>
+      </section>
+      <section id='secao2'>
+        <div><h2 id='title'>Planeje de Forma Inteligente</h2>
+        <p id='text'>Com nossa lista “Meu Dia” você será<br/> capaz de separar e ordenar seu dia<br/> de forma estratégica.</p></div>
+      </section>
+      <section>
+        <div>
+          <h1 id='title'>
+          Calendário para Melhor <br/>Planejamento...
+          </h1>
+          <p id='text'>Disponibilizamos um calendário<br/> para melhor ordenação de tarefas durante o<br/> mês.</p>
+        </div>
+      </section>
+      <section>
+        <div>
+        <h1 id='title'>
+        Planeje seus eventos de<br/> forma excepcional...
+          </h1>
+          <p id='text'>Nossa plataforma disponibiliza uma<br/> lista para cada evento desejado.</p>
+        </div>
       </section>
     </main>
     </>
