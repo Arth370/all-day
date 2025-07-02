@@ -1,0 +1,22 @@
+.sol{
+    width: 5vw;
+}
+#meu-dia{
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+    gap:1.0vw
+}
+main{
+    background-color: red;
+}
+.circulo{
+    width: 6vw;
+    height: 4vh;
+    border-radius: 3em;
+    
+}
+
+
+
+
