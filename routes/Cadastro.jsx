@@ -1,7 +1,20 @@
 import React from 'react'
-import "../style/Login.css"
+import "../style/Cadastro.css"
+import { useState } from "react"
 import { Link } from 'react-router-dom';
 function Cadastro() {
+  const [nome,setNome]=useState(null)
+  const [email,setEmail]=useState(null)
+  const [senha,setSenha]=useState(null)
+  const [confirmSenha,setConfirmSenha]=useState(null)
+  function clique(){
+    if(nome!=null&&email!=null&&senha!=null&&senha==confirmSenha){
+      window.location.href='http://localhost:5173/meu-dia'
+    }
+    else{
+      alert('Preencha os campos corretamente!')
+    }
+  }
   return (
     <>
       <div id='meio'>
@@ -10,19 +23,19 @@ function Cadastro() {
           <section id='textos'>
              <div>
               <p>Nome</p>
-            <input className='textInput' type="text" />
+            <input className='textInput' value={nome} onChange={event=>setNome(event.target.value)} type="text" />
             </div>
             <div>
               <p>E-mail</p>
-              <input className='textInput' type="text" />
+              <input className='textInput' type="text" value={email} onChange={event=>setEmail(event.target.value)} />
             </div>
             <div>
               <p>Senha</p>
-              <input className='textInput' type="password" />
+              <input className='textInput' type="password" value={senha} onChange={event=>setSenha(event.target.value)} />
             </div>
             <div>
               <p>Confirmar Senha</p>
-              <input className='textInput' type="password" />
+              <input className='textInput' type="password" value={confirmSenha} onChange={event=>setConfirmSenha(event.target.value)} />
             </div>
           </section>
           <section id='parte-embaixo'>
@@ -38,8 +51,8 @@ function Cadastro() {
                 </div>
             </div>
             <div id='inferior'>
-                     <button>Cadastrar-se</button>
-          <p>já possui um conta? <Link to=''>Faça Login!</Link></p>
+                     <button onClick={clique}>Cadastrar-se</button>
+          <p>já possui um conta? <Link to='/Login'>Faça Login!</Link></p>
             </div>
           </section>
        </div>

@@ -1,0 +1,56 @@
+body{
+    background-color: #FFFEE7;
+}
+#meio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border: 1px solid;
+    padding: 4vw;
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+}
+#meio h1{
+    display: flex;
+    align-self: center;
+}
+#generos{
+    display: flex;
+}
+#textos{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.textInput{
+    width: 18vw;
+}
+#inferior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+#inferior button{
+    width: 10vw;
+    background-color: #800000;
+    color: white;
+    height: 5vh;
+    border-radius: 2em;
+}
+#parte-embaixo{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+#botao{
+    width: 10vw;
+    background-color: #800000;
+    color: white;
+    height: 5vh;
+    border-radius: 2em;
+}
