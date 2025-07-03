@@ -32,13 +32,16 @@ header{
     width: 3vw;
     
 }
-
+.link{
+    text-decoration: none;
+}
 .botao{
     cursor: pointer;
     text-decoration: none;
     color: white;
     font-size: 1.5vw;
     transition: 0.5s;
+    
     
 }
 .botao:hover{
@@ -52,6 +55,10 @@ main{
     display: flex;
     flex-direction: column;
     gap: 15vw;
+}
+#secao1{
+    display: flex;
+    justify-content: space-between;
 }
 #AllDay{
     color: #800000;
@@ -70,6 +77,18 @@ main{
 }
 #secao2{
     display: flex;
-    flex-direction: column;
-    align-items: end;
+    justify-content: space-between;
+}
+.imagem{
+    border: 0.5vw solid ;
+    border-radius: 2em;
+    width: 40vw;
+}
+#secao3{
+    display: flex;
+    justify-content: space-between;
+}
+#secao4{
+    display: flex;
+    justify-content: space-between;
 }

@@ -13,6 +13,12 @@ body{
 
     border-radius: 1em;
 }
+#fim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
 #conteudo{
     display: flex;
     flex-direction: column;

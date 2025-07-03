@@ -9,6 +9,8 @@ function Cadastro() {
   const [confirmSenha,setConfirmSenha]=useState(null)
   function clique(){
     if(nome!=null&&email!=null&&senha!=null&&senha==confirmSenha){
+      localStorage.setItem('nome',nome)
+      localStorage.setItem('senha',senha)
       window.location.href='http://localhost:5173/meu-dia'
     }
     else{
@@ -19,6 +21,7 @@ function Cadastro() {
     <>
       <div id='meio'>
         <Link to='/'>X</Link>
+        <div id='conteudo'>
           <h1>All Day</h1>
           <section id='textos'>
              <div>
@@ -55,6 +58,7 @@ function Cadastro() {
           <p>já possui um conta? <Link to='/Login'>Faça Login!</Link></p>
             </div>
           </section>
+        </div>
        </div>
     </>
   )
