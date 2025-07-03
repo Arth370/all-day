@@ -2,7 +2,7 @@ import React from 'react'
 import '../style/Home.css'
 import loginPeople from '../images/login-people.png'
 import Logo from '../images/All-day-logo.png'
-
+import { Link } from 'react-router-dom';
 function Home() {
   return (
     <>
@@ -17,7 +17,7 @@ function Home() {
         </div>
         <div id='login'>
             <img src={loginPeople} alt="login" className='people' />
-            <a href="http://localhost:5173/login" className='botao'><p className='text-button'>Login</p></a>
+            <Link to='Cadastro' className='botao'>Login</Link>
         </div>
     </header>
     <main>
