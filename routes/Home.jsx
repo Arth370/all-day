@@ -17,8 +17,8 @@ function Home() {
       </div>
         <div id='rotas'>
             <a className='link' href="#header"><p className='botao'>Início</p></a>
+            <p className='botao'>Sobre Nós</p>
             <p className='botao'>Contato</p>
-            <p className='botao'>Suporte</p>
         </div>
         <div id='login'>
             <img src={loginPeople} alt="login" className='people' />

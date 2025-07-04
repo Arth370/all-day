@@ -9,6 +9,9 @@ import Cadastro from '../routes/Cadastro.jsx'
 import MeuDia from '../routes/MeuDia.jsx'
 import Anotacoes from '../routes/Anotacoes.jsx'
 import Login from '../routes/Login.jsx'
+import SobreNos from '../routes/SobreNos.jsx'
+import Contato from '../routes/Contato.jsx'
+
 
 const router = createBrowserRouter([
   {
@@ -30,6 +33,15 @@ const router = createBrowserRouter([
   {
     path:"Login",
     element:<Login/>
+  },
+  {
+    path:"Sobre-nos",
+    element:<SobreNos/>
+  },
+
+  {
+    path: "Contato",
+    element: <Contato/>
   }
   
 ])
