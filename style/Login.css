@@ -1,0 +1,27 @@
+body{
+    background-color: #FFFEE7;
+}
+#meio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border: 1px solid;
+    padding: 4vw;
+
+
+    border-radius: 1em;
+}
+#fim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+#conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        gap: 1vw;
+}

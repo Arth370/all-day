@@ -5,8 +5,10 @@ import{
 } from "react-router-dom"
 
 import Home from '../routes/Home.jsx'
-import Login from '../routes/Login.jsx'
+import Cadastro from '../routes/Cadastro.jsx'
 import MeuDia from '../routes/MeuDia.jsx'
+import Anotacoes from '../routes/Anotacoes.jsx'
+import Login from '../routes/Login.jsx'
 
 const router = createBrowserRouter([
   {
@@ -14,12 +16,20 @@ const router = createBrowserRouter([
     element:<Home />
   },
   {
-    path:"login",
-    element:<Login/>
+    path:"Cadastro",
+    element:<Cadastro/>
   },
   {
     path:"Meu-dia",
     element:<MeuDia/>
+  },
+  {
+    path:"Anotacoes",
+    element:<Anotacoes/>
+  },
+  {
+    path:"Login",
+    element:<Login/>
   }
   
 ])
