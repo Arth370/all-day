@@ -10,21 +10,21 @@ function Anotacoes() {
     <>
       <header>
         <div>
-            <img src={Edit} alt="Edit" className='edit'/></div>
-            <h1 className='titulo'>
-                Anotações
-                </h1>
+          <img src={Edit} alt="Edit" className='edit' /></div>
+        <h1 className='titulo'>
+          Anotações
+        </h1>
       </header>
 
       <main>
-    <div className='caixa_geral'>
-        <div> <img src= {Circle} alt="Circle" className='circle' /> <div className='textinho'>Adicionar uma anotação</div></div>
-    <div className='puxadinho'>
-    <div><img src={Calendar} alt="Calendar" className='Calendar' /></div>
-    <div><img src={Refresh} alt="Refresh" className='refresh'/></div>
+        <div className='caixa_geral'>
+          <div> <img src={Circle} alt="Circle" className='circle' /> <div className='textinho'>Adicionar uma anotação</div></div>
+          <div className='puxadinho'>
+            <div><img src={Calendar} alt="Calendar" className='Calendar' /></div>
+            <div><img src={Refresh} alt="Refresh" className='refresh' /></div>
 
-    </div>
-    </div>
+          </div>
+        </div>
       </main>
 
       <footer>
