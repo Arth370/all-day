@@ -4,6 +4,7 @@ import loginPeople from '../images/login-people.png'
 import Logo from '../images/All-day-logo.png'
 import { Link } from 'react-router-dom';
 import importante from "../images/importante.png"
+import Importante from "./Importante.jsx"
 import meudia from "../images/MeuDia.png"
 import calendario from "../images/calendario.png"
 import eventos from "../images/Eventos.png"
