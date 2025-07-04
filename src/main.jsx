@@ -11,8 +11,8 @@ import Anotacoes from '../routes/Anotacoes.jsx'
 import Login from '../routes/Login.jsx'
 import SobreNos from '../routes/SobreNos.jsx'
 import Contato from '../routes/Contato.jsx'
-
-
+import Importante from '../routes/Importante.jsx'
+import Eventos from '../routes/Eventos.jsx'
 const router = createBrowserRouter([
   {
     path:"/",
@@ -34,6 +34,7 @@ const router = createBrowserRouter([
     path:"Login",
     element:<Login/>
   },
+
   {
     path:"Sobre-nos",
     element:<SobreNos/>
@@ -42,7 +43,17 @@ const router = createBrowserRouter([
   {
     path: "Contato",
     element: <Contato/>
+  },
+
+{
+  path:"Importante",
+  element:<Importante/>
+},
+  {
+    path:"Eventos",
+    element:<Eventos/>
   }
+
   
 ])
 createRoot(document.getElementById('root')).render(

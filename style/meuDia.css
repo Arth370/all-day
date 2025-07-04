@@ -8,13 +8,22 @@
     gap:1.0vw
 }
 
-.circulo{
-    width: 6vw;
-    height: 4vh;
-    border-radius: 3em;
-    
+.icons{
+    display: flex;
+    gap:3vw;
+    margin-right:25vw ;
+    color: white;
 }
-
+.text-botao{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vw;
+    transition: 0.5s;
+}
+ .text-botao:hover{
+   font-size: 1.7vw;
+   transition: 0.5s;
+}
 
 
 

@@ -1,19 +1,19 @@
 import React from 'react'
-import "../style/Anotacoes.css"
+import '../style/Eventos.css'
 import Icon from '../images/icon.png'
 import Circle from '../images/Circle.png'
 import Bloco from '../images/Bloco.png'
 import Refresh from '../images/Refresh.png'
-import editar from '../images/Edit.png'
-function Anotacoes() {
-  return (
-    <>
+
+function Eventos() {
+    return (
+        <>
             <header>
                 <div>
-                    <img src={editar} alt="Icon" className='icon' />
+                    <img src={Icon} alt="Icon" className='icon' />
                 </div>
                 <div id='Eventos'>
-                    <p>Anotações</p>
+                    <p>Eventos</p>
                 </div>
             </header>
             <main>
@@ -40,8 +40,7 @@ function Anotacoes() {
                     </div>
                 </div>
             </main>
-    </>
-  )
+        </>
+    )
 }
-
-export default Anotacoes
+export default Eventos

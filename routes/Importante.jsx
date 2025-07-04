@@ -1,29 +1,29 @@
 import React from 'react'
-import "../style/Anotacoes.css"
-import Icon from '../images/icon.png'
+import "../style/Importante.css"
+import Atencao from '../images/Atencao.png'
 import Circle from '../images/Circle.png'
 import Bloco from '../images/Bloco.png'
 import Refresh from '../images/Refresh.png'
-import editar from '../images/Edit.png'
-function Anotacoes() {
-  return (
-    <>
-            <header>
+
+export function Importante() {
+    return (
+      <>
+        <header>
                 <div>
-                    <img src={editar} alt="Icon" className='icon' />
+                    <img src={Atencao} alt="Atencao" className='Atencao' />
                 </div>
-                <div id='Eventos'>
-                    <p>Anotações</p>
+                <div id='h1'>
+                    <p>Importante</p>
                 </div>
             </header>
-            <main>
+      <main>
                 <div id='tudo'>
                     <div id='barra'>
                         <div id='img'>
                             <img src={Circle} alt="Cicle" className='circle' />
                         </div>
                         <div>
-                            <p id='Add'>Adicionar um evento</p>
+                            <p id='Add'>Adicionar uma tarefa</p>
                         </div>
                     </div>
                     <div id='linha'>
@@ -40,8 +40,10 @@ function Anotacoes() {
                     </div>
                 </div>
             </main>
-    </>
+      
+      
+        </>
   )
 }
 
-export default Anotacoes
+export default Importante
