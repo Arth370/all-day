@@ -7,40 +7,23 @@
     padding: 1vw;
     gap:1.0vw
 }
- .meio{
-    display: flex;
-    margin-top: 20vh;
-    margin-left: 3vw;
-    flex-direction: column;
- }
-.barrinhaTarefas{
-    display: flex;
-    align-items: center;
-    width: 40vw;
-    height: 10vh;
-    border-radius: 3em;
-    background-color: white;
 
-}
-.barrinhaTarefas-Dois{
+.icons{
     display: flex;
-    margin-top: 1vh;
-    align-items: center;
-    width: 40vw;
-    height: 10vh;
-    border-radius: 3em;
-    background-color: white;
+    gap:3vw;
+    margin-right:25vw ;
+    color: white;
 }
-
-.imagemzinha{
-   margin-left: 2em;
+.text-botao{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vw;
+    transition: 0.5s;
 }
-
-.mensagemTarefa{
-    display: flex;
-    padding: 1vw;
+ .text-botao:hover{
+   font-size: 1.7vw;
+   transition: 0.5s;
 }
-
 
 
 
