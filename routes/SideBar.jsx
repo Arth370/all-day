@@ -11,7 +11,7 @@ import {
 import { Button, Menu } from 'antd';
 import { Link } from 'react-router-dom';
 const items = [
-  { key: '1', icon: <PieChartOutlined />, label:<Link to='/'>Home</Link>},
+  { key: '1', icon: <PieChartOutlined />, label: <Link to='/'>Home</Link> },
   { key: '2', icon: <DesktopOutlined />, label: 'Option 2' },
   { key: '3', icon: <ContainerOutlined />, label: 'Option 3' },
   { key: '4', icon: <PieChartOutlined />, label: 'Option 1' },

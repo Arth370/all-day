@@ -9,19 +9,19 @@ function MeuDia() {
     <>
       <header class="cabeca">
         <div id='meu-dia'>
-          
+
           <img src={sol_melhor} alt="Sol" className='sol' />
           <h1>Meu Dia</h1>
         </div>
       </header>
-      <SideBar/>
+      <SideBar />
       <main>
         <div className='circulo'>
-        <img src={Circle} alt="" />
+          <img src={Circle} alt="" />
         </div>
       </main>
       <footer></footer>
-    
+
     </>
   )
 }
