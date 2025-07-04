@@ -9,9 +9,7 @@ import Cadastro from '../routes/Cadastro.jsx'
 import MeuDia from '../routes/MeuDia.jsx'
 import Anotacoes from '../routes/Anotacoes.jsx'
 import Login from '../routes/Login.jsx'
-
 import Importante from '../routes/Importante.jsx'
-
 import Eventos from '../routes/Eventos.jsx'
 const router = createBrowserRouter([
   {
@@ -34,6 +32,8 @@ const router = createBrowserRouter([
     path:"Login",
     element:<Login/>
   },
+
+
 
 {
   path:"Importante",
