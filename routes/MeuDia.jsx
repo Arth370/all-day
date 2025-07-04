@@ -15,7 +15,7 @@ function MeuDia() {
         </div>
       </header>
       <SideBar/>
-      <main>
+      <main className='meio'>
         <div className='circulo'>
         <img src={Circle} alt="" />
         </div>

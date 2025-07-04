@@ -7,8 +7,9 @@
     padding: 1vw;
     gap:1.0vw
 }
-main{
-    background-color: red;
+.meio{
+    background-color: rgb(253, 226, 201);
+    display: flex
 }
 .circulo{
     width: 6vw;
