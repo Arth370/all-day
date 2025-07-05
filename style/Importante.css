@@ -6,13 +6,13 @@ body{
 
 
 .atencao{
-    width: 10vw;
-    height: 12vh;
+    width: 7vw;
+    height: 16vh;
 }
 
 #h1{
     font-size: 4vw;
-    margin-right: 69vw;
+    margin-right: 61vw;
 }
 
 
@@ -41,20 +41,29 @@ body{
     flex-direction: column;
     background-color: #800000;
     font-size: 2.5vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);;
 }
 
-#Cri{
+#Cri {
+    font-family: "Poppins", sans-serif;
     color: #ffffff;
-    font-size: 2vw;
     font-size: 4.1vh;
     background-color: #800000;
-    border-radius: 0.8vh;
+    border-radius: 1vh; 
     width: 10vw;
     height: 6vh;
     margin-right: 5vw;
     display: flex;
     justify-content: center;
-}
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #Cri:hover {
+    background-color: #a00000;
+  }
 
 #Eventos{
     font-size: 4vw;
@@ -98,4 +107,74 @@ body{
     margin-top: 1vh;
     margin-bottom: 1vh;
     margin-left: 1vh;
+}
+
+
+#AddInput {
+    border: none;
+    outline: none;
+    font-size: 2vw;
+    margin-left: 1.5vw;
+    color: #800000;
+    background-color: transparent;
+    width: 70vw;
+  }
+
+  #AddInput::placeholder {
+    color: #800000;
+    font-family: "Poppins", sans-serif;
+    font-size: 2vw;
+  }
+  
+  
+  #tarefas-lista {
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  
+  .tarefa-box {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 600px;
+    font-size: 18px;
+    color: #800000;
+  }
+ 
+  #tarefas-lista {
+    margin-top: 3vh;
+    padding: 1vh 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+  }
+  
+  .tarefa-box {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    background-color: #ffffff;
+    padding: 1.5vh 22vw;
+    font-size: 2vw;
+    color: #800000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    position: relative;
+    top: -30.5vh;
+    left: -4.5vh;
+  }
+  
+  .tarefa-box img {
+    width: 3.4vw;
+    height: 7vh;
+  }
+  
+  .bola{
+   position: relative;
+   right: 47vh;
+}
+
+.tarefa-titulo{
+    position: relative;
+    right: 45.1vh;
 }
