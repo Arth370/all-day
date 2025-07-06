@@ -28,7 +28,7 @@ function Home() {
           <Link to='Cadastro' className='botao'>Login</Link>
         </div>
       </header>
-      <main id='conteudo'>
+      <main id='conteudo2'>
         <section id='secao1'>
           <div>
             <h1 id='AllDay'>All Day,</h1>
