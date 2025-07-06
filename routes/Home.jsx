@@ -22,17 +22,13 @@ function Home() {
             <p className='botao'>Sobre Nós</p>
             <p className='botao'>Contato</p>
 
-          <a className='link' href="#header"><p className='botao'>Início</p></a>
-          <p className='botao'>Contato</p>
-          <p className='botao'>Suporte</p>
-
         </div>
         <div id='login'>
           <img src={loginPeople} alt="login" className='people' />
           <Link to='Cadastro' className='botao'>Login</Link>
         </div>
       </header>
-      <main>
+      <main id='conteudo2'>
         <section id='secao1'>
           <div>
             <h1 id='AllDay'>All Day,</h1>
