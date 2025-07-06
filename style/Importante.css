@@ -178,3 +178,50 @@ body{
     position: relative;
     right: 45.1vh;
 }
+
+.detalhes-tarefa {
+  position: fixed;
+  top: 14.7vh;
+  right: 0vw;
+  width: 25vw;
+  height: 36vw;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 2vh 2vw;
+  font-family: 'Poppins', sans-serif;
+  z-index: 999;
+}
+
+.detalhes-tarefa h2 {
+  color: #800000;
+  font-size: 1.5vw;
+  margin-bottom: 1vh;
+  font-weight: normal;
+}
+
+.detalhe-item {
+  margin-bottom: 2vh;
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.detalhe-item input[type="date"],
+.detalhe-item input[type="file"],
+.detalhe-item textarea {
+  flex: 1;
+  padding: 0.5vh;
+  border: 1px solid;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1vw;
+}
+
+.detalhes-tarefa button {
+  background-color: #800000;
+  color: white;
+  border: none;
+  padding: 1vh 2vw;
+  border-radius: 8px;
+  cursor: pointer;
+}

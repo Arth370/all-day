@@ -4,11 +4,14 @@ import Atencao from '../images/Atencao.png'
 import Circle from '../images/Circle.png'
 import Bloco from '../images/Bloco.png'
 import Refresh from '../images/Refresh.png'
+import calendario_importante from '../images/calendario_importante.png.png'
+import Paperclip from '../images/Paperclip.png'
 
 export function Importante() {
     const [inputValue, setInputValue] = useState('');
     const [tarefas, setTarefas] = useState([]);
     const [editando, setEditando] = useState(false);
+    const [tarefaSelecionada, setTarefaSelecionada] = useState(null);
   
     const criarTarefa = () => {
       if (inputValue.trim() !== '') {
@@ -88,13 +91,31 @@ export function Importante() {
   
           <div id="tarefas-lista">
             {tarefas.map((tarefa, index) => (
-              <div className="tarefa-box" key={index}>
+              <div className="tarefa-box" key={index} 
+              onClick={() => setTarefaSelecionada(tarefa)}>
                 <img src={Circle} alt="Bola" className="bola" />
                 <p className="tarefa-titulo">{tarefa}</p>
               </div>
             ))}
           </div>
         </main>
+        {tarefaSelecionada && (
+  <div className="detalhes-tarefa">
+    <h2>{tarefaSelecionada}</h2>
+    <div className="detalhe-item">
+     <img src={calendario_importante} alt="Calendário" className="detalhe-icon" />
+      <input type="date" placeholder="Adicionar data de conclusão" />
+    </div>
+    <div className="detalhe-item">
+      <img src={Paperclip} alt="Anexo" className="detalhe-icon"/>
+      <input type="file" />
+    </div>
+    <div className="detalhe-item">
+      <textarea placeholder="Adicionar anotação" rows="5"></textarea>
+    </div>
+    <button onClick={() => setTarefaSelecionada(null)}>Fechar</button>
+  </div>
+)}
       </>
     );
   }
