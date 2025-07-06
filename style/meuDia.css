@@ -15,7 +15,7 @@
     height: 13vh;
     display: flex;
     align-items: center;
-    
+    border: 1px solid;  
     justify-content: space-between;
 }
 #tasks{
