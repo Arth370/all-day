@@ -4,17 +4,28 @@ import Icon from '../images/icon.png'
 import Circle from '../images/Circle.png'
 import Bloco from '../images/Bloco.png'
 import Refresh from '../images/Refresh.png'
-
+import loginImagem from '../images/login-people.png'
+import { Link } from 'react-router-dom'
+let user = localStorage.getItem('nome')
 function Eventos() {
     return (
         <>
-            <header>
-                <div>
-                    <img src={Icon} alt="Icon" className='icon' />
-                </div>
+            <header id='cabecario'>
                 <div id='Eventos'>
+                    <img src={Icon} alt="Icon" className='icon' />
                     <p>Eventos</p>
                 </div>
+        <div className='icons'>
+          <Link className='text-botao' to='/'><p>Início</p></Link>
+          <Link className='text-botao' to='/meu-dia'><p>Meu dia</p></Link>
+          <Link className='text-botao' to='/Eventos'><p>Eventos</p></Link>
+          <Link className='text-botao' to='/Anotacoes'>Anotações</Link>
+        </div>
+
+        <div className='userLogin'>
+          <img src={loginImagem} className='people'/>
+          <p>{user}</p>
+        </div>
             </header>
             <main>
                 <div id='tudo'>

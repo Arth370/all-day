@@ -5,16 +5,28 @@ import Circle from '../images/Circle.png'
 import Bloco from '../images/Bloco.png'
 import Refresh from '../images/Refresh.png'
 import editar from '../images/Edit.png'
+import loginImagem from '../images/login-people.png'
+import { Link } from 'react-router-dom'
+let user = localStorage.getItem('nome')
 function Anotacoes() {
   return (
     <>
             <header>
-                <div>
-                    <img src={editar} alt="Icon" className='icon' />
-                </div>
                 <div id='Eventos'>
+                    <img src={editar} alt="Icon" className='icon' />
                     <p>Anotações</p>
                 </div>
+                        <div className='icons'>
+          <Link className='text-botao' to='/'><p>Início</p></Link>
+          <Link className='text-botao' to='/meu-dia'><p>Meu dia</p></Link>
+          <Link className='text-botao' to='/Eventos'><p>Eventos</p></Link>
+          <Link className='text-botao' to='/Anotacoes'>Anotações</Link>
+        </div>
+
+        <div className='userLogin'>
+          <img src={loginImagem} className='people'/>
+          <p>{user}</p>
+        </div>
             </header>
             <main>
                 <div id='tudo'>
@@ -23,7 +35,7 @@ function Anotacoes() {
                             <img src={Circle} alt="Cicle" className='circle' />
                         </div>
                         <div>
-                            <p id='Add'>Adicionar um evento</p>
+                            <p id='Add'>Adicionar uma anotação</p>
                         </div>
                     </div>
                     <div id='linha'>

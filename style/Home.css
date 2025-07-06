@@ -50,7 +50,7 @@ header{
  
     
 }
-main{
+#conteudo{
     padding: 4vw;
     display: flex;
     flex-direction: column;

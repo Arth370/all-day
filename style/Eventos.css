@@ -9,7 +9,6 @@ body{
     display: flex;
     align-items: center;
 }
-
 #barra2{
     background-color: white;
     display: flex;
@@ -38,8 +37,13 @@ body{
 }
 
 #Eventos{
-    font-size: 4vw;
-    margin-right: 69vw;
+   font-size: 4vw;
+   display: flex;
+   align-items: center;
+}
+#cabecario{
+    display: flex;
+    justify-content: space-between;
 }
 
 .icon{
@@ -71,6 +75,7 @@ body{
     color: #800000;
     font-size: 2vw;
     margin-left: 1.5vw;
+    border: none;
 }
 
 #img{
