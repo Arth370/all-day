@@ -25,10 +25,44 @@ function DataDeHoje() {
   const dataFormatada = `${dia}/${mes}/${ano}`;
   return  dataFormatada
 }
-
 function MeuDia() {
   const [task,setTask] = useState(null)
+   let clicado= false
+
+  
+    function edicao(){
+      if(clicado==false){
+              const fundo = document.getElementById('root')
+      const Divzona = document.createElement('div')
+      const h1 = document.createElement('h1')
+      const dataCoclusao = document.createElement('input')
+      const botaoSair = document.createElement('button')
+      dataCoclusao.placeholder='Data de Conclusão...'
+      const anotar = document.createElement('textarea')
+      anotar.placeholder='Anotações...'
+      Divzona.classList.add('editando')
+      fundo.appendChild(Divzona)
+      Divzona.appendChild(h1)
+      Divzona.appendChild(dataCoclusao)
+      Divzona.appendChild(anotar)
+      Divzona.appendChild(botaoSair)
+
+      h1.textContent=task
+      botaoSair.textContent='Fechar'
+      botaoSair.onclick = function sair(){
+        Divzona.remove()
+        h1.remove()
+        dataCoclusao.remove()
+        anotar.remove()
+        botaoSair.remove()
+        clicado=false
+      }
+      
+      }
+      clicado=true
+    }
   function HandleClick(){
+
     const rootEl = document.getElementById('tasks')
     const newDiv = document.createElement('div')
     const Divtask = document.createElement('div')
@@ -46,8 +80,25 @@ function MeuDia() {
     EditarButton.src=Editar
     CopiarButton.src=Copiar
     Lixobutton.src=Lixo
-    
 
+    EditarButton.onclick = edicao
+    Lixobutton.onclick = function apagar(){
+    newDiv.remove()
+    Divtask.remove()
+    DivData.remove()
+    DivEsquerda.remove()
+    EditarButton.remove()
+    CopiarButton.remove()
+    Lixobutton.remove()
+    newImg.remove()
+    newP.remove()
+    PData.remove()
+    }
+
+    
+    EditarButton.classList.add('ImgButton')
+    CopiarButton.classList.add('ImgButton')
+    Lixobutton.classList.add('ImgButton')
     newDiv.classList.add('barra')
     newP.classList.add('textTask')
     Divtask.classList.add('taskOrder')
@@ -83,6 +134,7 @@ function MeuDia() {
           <Link className='text-botao' to='/meu-dia'><p>Meu dia</p></Link>
           <Link className='text-botao' to='/Eventos'><p>Eventos</p></Link>
           <Link className='text-botao' to='/Anotacoes'>Anotações</Link>
+          <Link className='text-botao' to='/Importante'>Importantes</Link>
         </div>
 
         <div className='userLogin'>

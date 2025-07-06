@@ -92,3 +92,11 @@ header{
     display: flex;
     justify-content: space-between;
 }
+footer{
+        background-color: #800000;
+    display: flex;
+    color: white;
+    height: 30vh;
+    align-items: end;
+    justify-content: center;
+}

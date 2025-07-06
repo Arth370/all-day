@@ -4,9 +4,8 @@ import loginPeople from '../images/login-people.png'
 import Logo from '../images/All-day-logo.png'
 import { Link } from 'react-router-dom';
 import importante from "../images/importante.png"
-import Importante from "./Importante.jsx"
+import anotacoes from "../images/anotacoes.png"
 import meudia from "../images/MeuDia.png"
-import calendario from "../images/calendario.png"
 import eventos from "../images/Eventos.png"
 
 function Home() {
@@ -37,7 +36,7 @@ function Home() {
             <p id='text'>organize seu dia com a ajuda da melhor plataforma<br /> de lista de tarefas.</p>
           </div>
           <div >
-            <img src={importante} className='imagem' alt="" />
+            <img src={anotacoes} className='imagem' alt="" />
           </div>
         </section>
         <section id='secao2'>
@@ -52,26 +51,31 @@ function Home() {
         <section id='secao3'>
           <div>
             <h1 id='title'>
-              Calendário para Melhor <br />Planejamento...
-            </h1>
-            <p id='text'>Disponibilizamos um calendário<br /> para melhor ordenação de tarefas durante o<br /> mês.</p>
-          </div>
-          <div>
-            <img src={calendario} alt="" className='imagem' />
-          </div>
-        </section>
-        <section id='secao4'>
-          <div>
-            <img src={eventos} alt="" className='imagem' />
-          </div>
-          <div>
-            <h1 id='title'>
               Planeje seus eventos de<br /> forma excepcional...
             </h1>
             <p id='text'>Nossa plataforma disponibiliza uma<br /> lista para cada evento desejado.</p>
           </div>
+          <div>
+            <img src={eventos} alt="" className='imagem' />
+          </div>
         </section>
+        <section id='secao4'>
+                    <div>
+            <img src={importante} alt="" className='imagem' />
+          </div>
+          <div>
+            <h1 id='title'>
+              Detalhe suas tarefas...
+            </h1>
+            <p id='text'>Nossa aplicação permite <br /> a adição de anotações ou<br/> comentários em cada atividade.</p>
+          </div>
+
+        </section>
+        
       </main>
+      <footer>
+        <h1>Copyright © 2025 All Day. Todos os direitos reservados.</h1>
+      </footer>
     </>
   )
 }
