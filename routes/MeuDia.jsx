@@ -10,6 +10,9 @@ import Circle from '../images/Circle.png'
 import Bloco from '../images/Bloco.png'
 import Refresh from '../images/Refresh.png'
 import loginImagem from '../images/login-people.png'
+import Editar from "../images/Editar.png"
+import Lixo from "../images/Lixeira.png"
+import Copiar from "../images/Copy.png"
 
 import { Link } from 'react-router-dom'
 let user = localStorage.getItem('nome')
@@ -31,17 +34,24 @@ function MeuDia() {
     const Divtask = document.createElement('div')
     const DivData = document.createElement('div')
     const DivEsquerda = document.createElement('div')
-    const button = document.createElement('button')
+    const EditarButton = document.createElement('img')
+    const CopiarButton = document.createElement('img')
+    const Lixobutton = document.createElement('img')
     const newImg = document.createElement('img')
     const newP = document.createElement('p')
     const PData = document.createElement('p')
 
     newImg.src=Circle
+    
+    EditarButton.src=Editar
+    CopiarButton.src=Copiar
+    Lixobutton.src=Lixo
+    
+
     newDiv.classList.add('barra')
     newP.classList.add('textTask')
     Divtask.classList.add('taskOrder')
     DivEsquerda.classList.add('taskOrder')
-    button.classList.add('delete')
     DivData.classList.add('Data')
 
     newDiv.appendChild(Divtask)
@@ -50,12 +60,15 @@ function MeuDia() {
     rootEl.appendChild(newDiv)
     Divtask.appendChild(newP)
     DivEsquerda.appendChild(DivData)
-    DivEsquerda.appendChild(button)
+    DivEsquerda.appendChild(EditarButton)
+    DivEsquerda.appendChild(CopiarButton)
+    DivEsquerda.appendChild(Lixobutton)
+
     DivData.appendChild(PData)
     
     newP.textContent=task
     PData.textContent=DataDeHoje()
-    button.textContent='deletar'
+    
   }
   
   return (

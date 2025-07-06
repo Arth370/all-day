@@ -9,21 +9,25 @@
     font-size: 4vw;
 }
 .barra{
+    padding-left: 1vw;
+    padding-right: 1vw;
     background-color: white;
     border-radius: 2em;
-    width: 92vw;
+    width: 89vw;
     height: 13vh;
     display: flex;
-    align-items: center;
-    border: 1px solid;  
+    align-items: center; 
     justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);;
 }
 #tasks{
-
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
 }
 .taskOrder{
     display: flex;
-    gap: 1vw;
+    gap: 3vw;
     align-items: center;
     
 }
