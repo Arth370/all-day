@@ -18,7 +18,7 @@ function Home() {
         <div id='rotas'>
 
             <a className='link' href="#header"><p className='botao'>Início</p></a>
-            <p className='botao'>Sobre Nós</p>
+            <Link to='/Sobre-nos' className='botao'>Sobre Nós</Link>
             <p className='botao'>Contato</p>
 
         </div>
