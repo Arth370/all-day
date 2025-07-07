@@ -24,23 +24,23 @@ function DataDeHoje() {
   const ano = hoje.getFullYear();
 
   const dataFormatada = `${dia}/${mes}/${ano}`;
-  return  dataFormatada
+  return dataFormatada
 }
 function Importante() {
-  const [task,setTask] = useState(null)
-   let clicado= false
+  const [task, setTask] = useState(null)
+  let clicado = false
 
-  
-    function edicao(){
-      if(clicado==false){
-              const fundo = document.getElementById('root')
+
+  function edicao() {
+    if (clicado == false) {
+      const fundo = document.getElementById('root')
       const Divzona = document.createElement('div')
       const h1 = document.createElement('h1')
       const dataCoclusao = document.createElement('input')
       const botaoSair = document.createElement('button')
-      dataCoclusao.placeholder='Data de Conclusão...'
+      dataCoclusao.placeholder = 'Data de Conclusão...'
       const anotar = document.createElement('textarea')
-      anotar.placeholder='Anotações...'
+      anotar.placeholder = 'Anotações...'
       Divzona.classList.add('editando')
       fundo.appendChild(Divzona)
       Divzona.appendChild(h1)
@@ -48,21 +48,21 @@ function Importante() {
       Divzona.appendChild(anotar)
       Divzona.appendChild(botaoSair)
 
-      h1.textContent=task
-      botaoSair.textContent='Fechar'
-      botaoSair.onclick = function sair(){
+      h1.textContent = task
+      botaoSair.textContent = 'Fechar'
+      botaoSair.onclick = function sair() {
         Divzona.remove()
         h1.remove()
         dataCoclusao.remove()
         anotar.remove()
         botaoSair.remove()
-        clicado=false
+        clicado = false
       }
-      
-      }
-      clicado=true
+
     }
-  function HandleClick(){
+    clicado = true
+  }
+  function HandleClick() {
 
     const rootEl = document.getElementById('tasks')
     const newDiv = document.createElement('div')
@@ -76,27 +76,27 @@ function Importante() {
     const newP = document.createElement('p')
     const PData = document.createElement('p')
 
-    newImg.src=Circle
-    
-    EditarButton.src=Editar
-    CopiarButton.src=Copiar
-    Lixobutton.src=Lixo
+    newImg.src = Circle
+
+    EditarButton.src = Editar
+    CopiarButton.src = Copiar
+    Lixobutton.src = Lixo
 
     EditarButton.onclick = edicao
-    Lixobutton.onclick = function apagar(){
-    newDiv.remove()
-    Divtask.remove()
-    DivData.remove()
-    DivEsquerda.remove()
-    EditarButton.remove()
-    CopiarButton.remove()
-    Lixobutton.remove()
-    newImg.remove()
-    newP.remove()
-    PData.remove()
+    Lixobutton.onclick = function apagar() {
+      newDiv.remove()
+      Divtask.remove()
+      DivData.remove()
+      DivEsquerda.remove()
+      EditarButton.remove()
+      CopiarButton.remove()
+      Lixobutton.remove()
+      newImg.remove()
+      newP.remove()
+      PData.remove()
     }
 
-    
+
     EditarButton.classList.add('ImgButton')
     CopiarButton.classList.add('ImgButton')
     Lixobutton.classList.add('ImgButton')
@@ -117,12 +117,12 @@ function Importante() {
     DivEsquerda.appendChild(Lixobutton)
 
     DivData.appendChild(PData)
-    
-    newP.textContent=task
-    PData.textContent=DataDeHoje()
-    
+
+    newP.textContent = task
+    PData.textContent = DataDeHoje()
+
   }
-  
+
   return (
     <>
       <header class="cabeca">
@@ -139,7 +139,7 @@ function Importante() {
         </div>
 
         <div className='userLogin'>
-          <img src={loginImagem} className='people'/>
+          <img src={loginImagem} className='people' />
           <p>{user}</p>
         </div>
 
@@ -153,7 +153,7 @@ function Importante() {
             </div>
 
             <div>
-              <input type="text" value={task} onChange={event=>setTask(event.target.value)} placeholder='Adicionar uma tarefa...' id='Add' />
+              <input type="text" value={task} onChange={event => setTask(event.target.value)} placeholder='Adicionar algo importante...' id='Add' />
             </div>
           </div>
 
@@ -161,7 +161,7 @@ function Importante() {
             <p>.</p>
           </div>
 
-           <div id='barra2'>
+          <div id='barra2'>
             <div id='img'>
               <img src={Bloco} alt="Bloco" className='bloco' />
               <img src={Refresh} alt="Refresh" className='refresh' />

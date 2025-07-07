@@ -20,106 +20,106 @@ function DataDeHoje() {
   const ano = hoje.getFullYear();
 
   const dataFormatada = `${dia}/${mes}/${ano}`;
-  return  dataFormatada
+  return dataFormatada
 }
 
 function Eventos() {
-      const [task,setTask] = useState(null)
-       let clicado= false
-    
-        function edicao(){
-          if(clicado==false){
-                  const fundo = document.getElementById('root')
-          const Divzona = document.createElement('div')
-          const h1 = document.createElement('h1')
-          const dataCoclusao = document.createElement('input')
-          const botaoSair = document.createElement('button')
-          dataCoclusao.placeholder='Data de Conclusão...'
-          const anotar = document.createElement('textarea')
-          anotar.placeholder='Anotações...'
-          Divzona.classList.add('editando')
-          fundo.appendChild(Divzona)
-          Divzona.appendChild(h1)
-          Divzona.appendChild(dataCoclusao)
-          Divzona.appendChild(anotar)
-          Divzona.appendChild(botaoSair)
-    
-          h1.textContent=task
-          botaoSair.textContent='Fechar'
-          botaoSair.onclick = function sair(){
-            Divzona.remove()
-            h1.remove()
-            dataCoclusao.remove()
-            anotar.remove()
-            botaoSair.remove()
-            clicado=false
-          }
-          
-          }
-          clicado=true
-        }
-      function HandleClick(){
-    
-        const rootEl = document.getElementById('tasks')
-        const newDiv = document.createElement('div')
-        const Divtask = document.createElement('div')
-        const DivData = document.createElement('div')
-        const DivEsquerda = document.createElement('div')
-        const EditarButton = document.createElement('img')
-        const CopiarButton = document.createElement('img')
-        const Lixobutton = document.createElement('img')
-        const newImg = document.createElement('img')
-        const newP = document.createElement('p')
-        const PData = document.createElement('p')
-    
-        newImg.src=Circle
-        
-        EditarButton.src=Editar
-        CopiarButton.src=Copiar
-        Lixobutton.src=Lixo
-    
-        EditarButton.onclick = edicao
-        Lixobutton.onclick = function apagar(){
-        newDiv.remove()
-        Divtask.remove()
-        DivData.remove()
-        DivEsquerda.remove()
-        EditarButton.remove()
-        CopiarButton.remove()
-        Lixobutton.remove()
-        newImg.remove()
-        newP.remove()
-        PData.remove()
-        }
-    
-        
-        EditarButton.classList.add('ImgButton')
-        CopiarButton.classList.add('ImgButton')
-        Lixobutton.classList.add('ImgButton')
-        newDiv.classList.add('barra')
-        newP.classList.add('textTask')
-        Divtask.classList.add('taskOrder')
-        DivEsquerda.classList.add('taskOrder')
-        DivData.classList.add('Data')
-    
-        newDiv.appendChild(Divtask)
-        newDiv.appendChild(DivEsquerda)
-        Divtask.appendChild(newImg)
-        rootEl.appendChild(newDiv)
-        Divtask.appendChild(newP)
-        DivEsquerda.appendChild(DivData)
-        DivEsquerda.appendChild(EditarButton)
-        DivEsquerda.appendChild(CopiarButton)
-        DivEsquerda.appendChild(Lixobutton)
-    
-        DivData.appendChild(PData)
-        
-        newP.textContent=task
-        PData.textContent=DataDeHoje()
-        
+  const [task, setTask] = useState(null)
+  let clicado = false
+
+  function edicao() {
+    if (clicado == false) {
+      const fundo = document.getElementById('root')
+      const Divzona = document.createElement('div')
+      const h1 = document.createElement('h1')
+      const dataCoclusao = document.createElement('input')
+      const botaoSair = document.createElement('button')
+      dataCoclusao.placeholder = 'Data de Conclusão...'
+      const anotar = document.createElement('textarea')
+      anotar.placeholder = 'Anotações...'
+      Divzona.classList.add('editando')
+      fundo.appendChild(Divzona)
+      Divzona.appendChild(h1)
+      Divzona.appendChild(dataCoclusao)
+      Divzona.appendChild(anotar)
+      Divzona.appendChild(botaoSair)
+
+      h1.textContent = task
+      botaoSair.textContent = 'Fechar'
+      botaoSair.onclick = function sair() {
+        Divzona.remove()
+        h1.remove()
+        dataCoclusao.remove()
+        anotar.remove()
+        botaoSair.remove()
+        clicado = false
       }
-    return (
-        <>
+
+    }
+    clicado = true
+  }
+  function HandleClick() {
+
+    const rootEl = document.getElementById('tasks')
+    const newDiv = document.createElement('div')
+    const Divtask = document.createElement('div')
+    const DivData = document.createElement('div')
+    const DivEsquerda = document.createElement('div')
+    const EditarButton = document.createElement('img')
+    const CopiarButton = document.createElement('img')
+    const Lixobutton = document.createElement('img')
+    const newImg = document.createElement('img')
+    const newP = document.createElement('p')
+    const PData = document.createElement('p')
+
+    newImg.src = Circle
+
+    EditarButton.src = Editar
+    CopiarButton.src = Copiar
+    Lixobutton.src = Lixo
+
+    EditarButton.onclick = edicao
+    Lixobutton.onclick = function apagar() {
+      newDiv.remove()
+      Divtask.remove()
+      DivData.remove()
+      DivEsquerda.remove()
+      EditarButton.remove()
+      CopiarButton.remove()
+      Lixobutton.remove()
+      newImg.remove()
+      newP.remove()
+      PData.remove()
+    }
+
+
+    EditarButton.classList.add('ImgButton')
+    CopiarButton.classList.add('ImgButton')
+    Lixobutton.classList.add('ImgButton')
+    newDiv.classList.add('barra')
+    newP.classList.add('textTask')
+    Divtask.classList.add('taskOrder')
+    DivEsquerda.classList.add('taskOrder')
+    DivData.classList.add('Data')
+
+    newDiv.appendChild(Divtask)
+    newDiv.appendChild(DivEsquerda)
+    Divtask.appendChild(newImg)
+    rootEl.appendChild(newDiv)
+    Divtask.appendChild(newP)
+    DivEsquerda.appendChild(DivData)
+    DivEsquerda.appendChild(EditarButton)
+    DivEsquerda.appendChild(CopiarButton)
+    DivEsquerda.appendChild(Lixobutton)
+
+    DivData.appendChild(PData)
+
+    newP.textContent = task
+    PData.textContent = DataDeHoje()
+
+  }
+  return (
+    <>
       <header class="cabeca">
         <div id='meu-dia'>
           <img src={Icon} alt="Sol" className='sol' />
@@ -134,39 +134,39 @@ function Eventos() {
         </div>
 
         <div className='userLogin'>
-          <img src={loginImagem} className='people'/>
+          <img src={loginImagem} className='people' />
           <p>{user}</p>
         </div>
 
       </header>
-            <main id='fundo'>
-                <div id='tudo'>
-                    <div id='barra'>
-                        <div id='img'>
-                            <img src={Circle} alt="Cicle" className='circle' />
-                        </div>
-                        <div>
-                            <input type="text" value={task} onChange={event=>setTask(event.target.value)} placeholder='Adicionar um Evento...' id='Add' />
-                        </div>
-                    </div>
-                    <div id='linha'>
-                        <p>.</p>
-                    </div>
-                    <div id='barra2'>
-                        <div id='img'>
-                            <img src={Bloco} alt="Bloco" className='bloco' />
-                            <img src={Refresh} alt="Refresh" className='refresh' />
-                        </div>
-                        <div id='criar'>
-                            <button onClick={HandleClick} id='Cri'>Criar</button>
-                        </div>
-                    </div>
-                </div>
-                <div id='tasks'>
+      <main id='fundo'>
+        <div id='tudo'>
+          <div id='barra'>
+            <div id='img'>
+              <img src={Circle} alt="Cicle" className='circle' />
+            </div>
+            <div>
+              <input type="text" value={task} onChange={event => setTask(event.target.value)} placeholder='Adicionar um Evento...' id='Add' />
+            </div>
+          </div>
+          <div id='linha'>
+            <p>.</p>
+          </div>
+          <div id='barra2'>
+            <div id='img'>
+              <img src={Bloco} alt="Bloco" className='bloco' />
+              <img src={Refresh} alt="Refresh" className='refresh' />
+            </div>
+            <div id='criar'>
+              <button onClick={HandleClick} id='Cri'>Criar</button>
+            </div>
+          </div>
+        </div>
+        <div id='tasks'>
 
-                </div>
-            </main>
-        </>
-    )
+        </div>
+      </main>
+    </>
+  )
 }
 export default Eventos
