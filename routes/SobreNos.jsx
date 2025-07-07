@@ -21,15 +21,6 @@ function SobreNos() {
    
  
   <main>
-    <div className='caixabranca'>
-        <div className='caixinha'>
-            <p className='textinho1'>All Day</p>
-            </div> 
-
-          <img src={Users} alt="Users" className='users' /></div>
-        <h1 className='titulo1'>
-          Sobre Nós
-        </h1>
         <div className='caixabranca'>
           <div className='caixinha'>
             <h2 className='textinho1'>All Day</h2>

@@ -16,16 +16,9 @@ function Home() {
           <img src={Logo} alt="logo" className='logo' />
         </div>
         <div id='rotas'>
-
-
             <a className='link' href="#header"><p className='botao'>Início</p></a>
             <Link to='/Sobre-nos' className='botao'>Sobre Nós</Link>
             <Link to='/Contato' className='botao'>Contato</Link>
-          <a className='link' href="#header"><p className='botao'>Início</p></a>
-          <Link to='/Sobre-nos' className='botao'>Sobre Nós</Link>
-          <p className='botao'>Contato</p>
-
-
         </div>
         <div id='login'>
           <img src={loginPeople} alt="login" className='people' />
