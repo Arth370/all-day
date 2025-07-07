@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import{
+import {
   createBrowserRouter, RouterProvider
 } from "react-router-dom"
 
@@ -15,49 +15,49 @@ import Importante from '../routes/Importante.jsx'
 import Eventos from '../routes/Eventos.jsx'
 const router = createBrowserRouter([
   {
-    path:"/",
-    element:<Home />
+    path: "/",
+    element: <Home />
   },
   {
-    path:"Cadastro",
-    element:<Cadastro/>
+    path: "Cadastro",
+    element: <Cadastro />
   },
   {
-    path:"Meu-dia",
-    element:<MeuDia/>
+    path: "Meu-dia",
+    element: <MeuDia />
   },
   {
-    path:"Anotacoes",
-    element:<Anotacoes/>
+    path: "Anotacoes",
+    element: <Anotacoes />
   },
   {
-    path:"Login",
-    element:<Login/>
+    path: "Login",
+    element: <Login />
   },
 
   {
-    path:"Sobre-nos",
-    element:<SobreNos/>
+    path: "Sobre-nos",
+    element: <SobreNos />
   },
 
   {
     path: "Contato",
-    element: <Contato/>
+    element: <Contato />
   },
 
-{
-  path:"Importante",
-  element:<Importante/>
-},
   {
-    path:"Eventos",
-    element:<Eventos/>
+    path: "Importante",
+    element: <Importante />
+  },
+  {
+    path: "Eventos",
+    element: <Eventos />
   }
 
-  
+
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </StrictMode>,
 )

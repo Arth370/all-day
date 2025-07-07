@@ -17,9 +17,14 @@ function Home() {
         </div>
         <div id='rotas'>
 
+
             <a className='link' href="#header"><p className='botao'>Início</p></a>
             <Link to='/Sobre-nos' className='botao'>Sobre Nós</Link>
             <Link to='/Contato' className='botao'>Contato</Link>
+          <a className='link' href="#header"><p className='botao'>Início</p></a>
+          <Link to='/Sobre-nos' className='botao'>Sobre Nós</Link>
+          <p className='botao'>Contato</p>
+
 
         </div>
         <div id='login'>
@@ -60,18 +65,18 @@ function Home() {
           </div>
         </section>
         <section id='secao4'>
-                    <div>
+          <div>
             <img src={importante} alt="" className='imagem' />
           </div>
           <div>
             <h1 id='title'>
               Detalhe suas tarefas...
             </h1>
-            <p id='text'>Nossa aplicação permite <br /> a adição de anotações ou<br/> comentários em cada atividade.</p>
+            <p id='text'>Nossa aplicação permite <br /> a adição de anotações ou<br /> comentários em cada atividade.</p>
           </div>
 
         </section>
-        
+
       </main>
       <footer>
         <h1>Copyright © 2025 All Day. Todos os direitos reservados.</h1>
