@@ -56,3 +56,30 @@
     margin-top: 2vw;
     margin-left: 2vw;
 }
+#rotas1{
+    display: flex;
+    gap: 2vw;
+}
+#login1{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.people1{
+    width: 3vw;
+    
+}
+.link1{
+    text-decoration: none;
+}
+.botao1{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    transition: 0.5s;
+}
+.botao1:hover{
+    transition: 0.5s;
+    font-size: 1.7vw;
+}

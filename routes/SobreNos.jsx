@@ -1,26 +1,29 @@
 import React from 'react'
 import Users from "../images/Users.png"
 import '../style/SobreNos.css'
+import { Link } from 'react-router-dom';
+import loginPeople from '../images/login-people.png'
 
 function SobreNos() {
   return (
     <>
-    
-<header>
+
+      <header>
         <div>
-
-        <img src={Users} alt="Users" className='users'/></div>
-        <p className='titulo1'>
-                Sobre Nós
-                </p>
-
-        <div><p className='inicio'>Início</p></div>
-       <div><p className='sobrenos'>Sobre Nós</p></div>
-       <div><p className='contatos'>Contatos</p></div>
+          <img src={Users} alt="Users" className='users1' />  
+        </div>
+        <p className='titulo1'>Sobre Nós</p>
+        <div id='rotas1'>
+          <Link to='/' className='botao1'>Início</Link>
+          <a className='link1' href="#header"><p className='botao1'>Sobre Nós</p></a>
+          <Link to='/Contato' className='botao1'>Contato</Link>
+        </div>
+        <div id='login1'>
+          <img src={loginPeople} alt="login" className='people1' />
+          <Link to='/Cadastro' className='botao1'>Login</Link>
+        </div>
       </header>
-   
- 
-  <main>
+      <main>
         <div className='caixabranca'>
           <div className='caixinha'>
             <h2 className='textinho1'>All Day</h2>

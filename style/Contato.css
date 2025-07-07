@@ -5,6 +5,11 @@
     margin-left: -1.1vw;
     
 }
+.titulo2{
+    font-size: 2vw;
+    margin-left: -21vw;
+    font-weight: normal; 
+}
 
 .sobrenos{
     font-size: 2vw;
@@ -95,5 +100,32 @@
 .textinho3{
     color: #FFFFFF;
     margin-left: 2vw;
+}
+#rotas2{
+    display: flex;
+    gap: 2vw;
+}
+#login2{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.people2{
+    width: 3vw;
+    
+}
+.link2{
+    text-decoration: none;
+}
+.botao2{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    transition: 0.5s;
+}
+.botao2:hover{
+    transition: 0.5s;
+    font-size: 1.7vw;
 }
 
