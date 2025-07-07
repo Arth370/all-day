@@ -1,1 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.inicio{
+    font-size: 2vw;
+    margin-left: -1.1vw;
+    
+}
+
+.sobrenos{
+    font-size: 2vw;
+    margin-left: -17vw;
+}
+
+.contatos{
+    font-size: 2vw;
+    margin-left: -24vw;
+}
+
+.mexidinho{
+    margin-top: 5vw;
+    margin-right: 2vw;
+}
+
+.icone{
+    height: 5vw ;
+}
+.nome{
+    font-size: 2vw;
+    margin-left: -21vw;
+    font-weight: normal;  
+}
+.Instagram{
+    height: 5vw ;
+    width: 5vw;
+    margin-left: 12vw;
+    margin-top: 4vw;
+}
+.Gmail{
+    height: 5vw ;
+    margin-left: 12vw;
+    margin-top: 1.2vw;
+}
+.Telefone{
+    height: 5vw ;
+    margin-left: 12vw;
+    margin-top: 1.2vw;
+}
+.caixa1{
+    background-color: #800000;
+    height: 4vw;
+    margin-left: 18vw;
+    border-radius: 8vw;
+    margin-top: -5vw;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    font-size: 1.7vw;
+}
+.textinho1{
+    color: #FFFFFF;
+   
+    margin-left: 2vw;
+}
+
+.caixa2{
+    background-color: #800000;
+    height: 4vw;
+    margin-left: 18vw;
+    border-radius: 8vw;
+    margin-top: -5vw;
+    width: 60vw;
+    display: flex;
+    font-size: 1.7vw;
+    align-items: center;
+    font-size: 1.7vw;
+}
+
+.textinho2{
+    color: #FFFFFF;
+    margin-left: 2vw;
+}
+
+.caixa3{
+    background-color: #800000;
+    height: 4vw;
+    margin-left: 18vw;
+    border-radius: 8vw;
+    margin-top: -5vw;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    font-size: 1.7vw;
+}
+
+.textinho3{
+    color: #FFFFFF;
+    margin-left: 2vw;
+}
+

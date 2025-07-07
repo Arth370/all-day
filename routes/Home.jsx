@@ -19,7 +19,7 @@ function Home() {
 
             <a className='link' href="#header"><p className='botao'>Início</p></a>
             <Link to='/Sobre-nos' className='botao'>Sobre Nós</Link>
-            <p className='botao'>Contato</p>
+            <Link to='/Contato' className='botao'>Contato</Link>
 
         </div>
         <div id='login'>
